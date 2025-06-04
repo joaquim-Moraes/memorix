@@ -8,19 +8,18 @@
 </head>
 <body>
     <section class="login">
-        <article class="bem-vindo">
-            <h1><strong>Bem-vindo!</strong></h1>
-        </article>
-        <article class="dados">
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            <h1>Bem-vindo!</h1>
+        <form id="dados">
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <input type="email" name="email" id="email" placeholder="Digite um e-mail" required>
+            <input type="password" name="senha" id="senha" placeholder="Digite uma senha" required>
             <label class="mostrar">
             <input type="checkbox" name="mostrar" id="mostrar">
             Mostrar senha
             </label>
-            <button id="entrar">Entrar</button>
+            <button id="entrar" type="submit">Entrar</button>
             <a href="cadastro.html" class="cadastro">Não tem uma conta? Cadastre-se</a>
-        </article>
+        </form>
     </section>
 </body>
 <script src="JS/login.js"></script>
