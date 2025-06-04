@@ -8,7 +8,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-#dados {
+.login {
     border-radius: 20px;
     background-color: rgb(102, 133, 189);
     display: flex;
@@ -22,7 +22,7 @@ body {
     font-size: 30px;
 }
 
-.dados {
+#dados {
     display: flex;
     flex-direction: column;
     gap: 20px;
