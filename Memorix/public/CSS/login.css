@@ -18,11 +18,11 @@ body {
     width: 500px;
     height: 500px;
 }
- .bem-vindo {
+ h1 {
     font-size: 30px;
 }
 
-.dados {
+#dados {
     display: flex;
     flex-direction: column;
     gap: 10px;
