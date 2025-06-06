@@ -176,10 +176,10 @@ footer {
     width: 100%;
 }
 
-.adicione-flashcard {
+.gerencie-flashcard {
     color: rgb(110, 110, 110);
     text-decoration: none;
-    font: normal 20px Montserrat;
+    font: normal 30px Montserrat;
     display: inline-block;
     cursor: pointer;
 }
