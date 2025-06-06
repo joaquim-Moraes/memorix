@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <link rel="stylesheet" href="CSS/cadastro.css">
+    <title>Cadastro</title>
+
 </head>
 <body>
     <section class="login">
-            <h1>Bem-vindo!</h1>
-        <form id="dados">
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-            <input type="email" name="email" id="email" placeholder="Digite um e-mail" required>
-            <input type="password" name="senha" id="senha" placeholder="Digite uma senha" required>
-            <label class="mostrar">
-            <input type="checkbox" name="mostrar" id="mostrar">
-            Mostrar senha
-            </label>
-            <button id="entrar" type="submit">Entrar</button>
-            <a href="login.html" class="login-botao">Já tem tem uma conta? Faça login</a>
-        </form>
+        <div class="esquerda">
+            <img src="img/logoBranca.png" class="logo" alt="Logo Memorix">
+        </div>
+        <div class="direita">
+            <h1>Cadastro</h1>
+            <form id="dados">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                <input type="email" name="email" id="email" placeholder="Digite um e-mail" required>
+                <input type="password" name="senha" id="senha" placeholder="Digite uma senha" required>
+                <label class="mostrar">
+                    <input type="checkbox" name="mostrar" id="mostrar">
+                    Mostrar senha
+                </label>
+                <button id="entrar" type="submit">Entrar</button>
+                <a href="login.html" class="login-botao">Já tem uma conta? Faça login</a>
+            </form>
+        </div>
     </section>
 </body>
 <script src="JS/cadastro.js"></script>

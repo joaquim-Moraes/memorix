@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/home.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Home</title>
 </head>
 <body>
@@ -11,9 +12,26 @@
         <h1>Seus flashcards</h1>
         <button class="perfil"><img src="img/pessoa.png" alt="Ícone de perfil"></button>
     </header>
+
+    <div class="flashcards-container" id="flashcards-list"></div>
+
+    <!-- Modal para exibir o flashcard clicado -->
+    <div class="modal" id="flashcard-modal">
+        <button class="fechar" onclick="fecharModal()">×</button>
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-pergunta"></p>
+        <p class="resposta" id="modal-resposta"></p>
+        <button id="botao-resposta" onclick="mostrarResposta()">Mostrar Resposta</button>
+    </div>
+    <!-- Modal do perfil -->
+    <div class="modal-perfil" id="modal-perfil">
+        <button class="fechar-perfil" onclick="fecharPerfil()">×</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
     <footer>
-        <a href="flashcard.html" class="flashcard">Adicionar flashcards</a>
+        <a href="flashcard.html" class="adicione-flashcard">Adicionar flashcards</a>
     </footer>
+
+    <script src="JS/home.js"></script>
 </body>
-<script src="JS/home.js"></script>
 </html>

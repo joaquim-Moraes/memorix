@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Raleway:wght@100..900&display=swap');
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    font: normal 25px Montserrat;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 20px;
+    position: relative;
+}
+
+.titulo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.botoes-cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribui os botões */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.voltar {
+    background: none;
+    border: none;
+    font: normal 18px Montserrat;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.perfil {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    right: 0; /* Mantém dentro dos limites */
+    margin-right: 35px; /* Ajusta a margem para evitar corte */
+}
+
+.perfil img {
+    height: 85%;
+    width: 85%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.modal-perfil {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 0px 15px 15px;
+    display: none;
+}
+
+.fechar-perfil {
+    height: 10px;
+    width: 30px;
+    margin: -3px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #000000;
+    cursor: pointer;
+    float: right;
+}
+
+.logout-btn {
+    display: block;
+    background: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-flashcard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(155, 155, 155);
+    background-color: rgb(255, 255, 255);
+    font: normal 16px Montserrat;
+    width: 100%;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#resposta {
+    height: 120px;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    border-radius: 20px; 
+    border: none;
+    width: 230px;
+    height: 40px;
+    font: normal 18px Montserrat;
+    cursor: pointer;
+}
+
+.salvar-btn {
+    background: linear-gradient(135deg, #ff0000 0%, #ff8800 50%, #ffe600 80%);   
+}
+
+.editar-btn {
+    background-color: #ffe600;
+}
+
+.excluir-btn {
+    background-color: #eb3d3d;
+}
+
+.mostrar-resposta {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff8800;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#flashcards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.flashcard {
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.flashcard .resposta {
+    display: none;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.flashcard .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.flashcard .btn-group button {
+    padding: 8px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+.lista-flashcards {
+    width: calc(100% - 200px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
