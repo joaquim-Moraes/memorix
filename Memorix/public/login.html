@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Login</title>
+
+</head>
+<body>
+<section class="login">
+        <div class="esquerda">
+            <h1>Login</h1>
+            <form id="dados">
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                <label class="mostrar">
+                    <input type="checkbox" name="mostrar" id="mostrar">
+                    Mostrar senha
+                </label>
+                <button id="entrar" type="submit">Entrar</button>
+                <a href="cadastro.html" class="cadastro">Não tem uma conta? Cadastre-se</a>
+            </form>
+        </div>       
+        <div class="direita">
+            <img src="img/logoBranca.png" class="logo" alt="Logo Memorix">
+        </div>
+    </section>
+</body>
+<script src="JS/login.js"></script>
+</html>

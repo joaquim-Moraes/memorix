@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/usuarios.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Gerenciar Usuários</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="titulo"><h1>Gerencie Usuários</h1></div>
+        <div class="botoes-cabecalho">
+            <button class="voltar" onclick="window.location.href='home.html'">← Voltar</button>
+            <button class="perfil"><img src="img/pessoa.png" alt="Ícone de perfil"></button>
+        </div>
+    </header>
+
+    <!-- Modal de perfil -->
+    <div class="modal-perfil" id="modal-perfil">
+        <button class="fechar-perfil" onclick="fecharPerfil()">×</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <section class="lista-usuarios">
+        <h2>Usuários</h2>
+        <div id="usuarios-list"></div>
+    </section>
+
+    <script src="JS/usuarios.js"></script>
+</body>
+</html>

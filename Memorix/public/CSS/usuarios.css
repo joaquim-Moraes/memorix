@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Raleway:wght@100..900&display=swap');
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    font: normal 25px Montserrat;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    margin-top: -20px;
+}
+
+
+.titulo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.botoes-cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.voltar {
+    margin-left: 40px;
+    background: none;
+    border: none;
+    font: normal 18px Montserrat;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.lista-usuarios {
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ff0000 0%, #ff8800 50%, #ffe600 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usuario {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: normal 18px Montserrat;
+    text-align: center;
+}
+
+.excluir-usuario {
+    background-color: #eb3d3d;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font: normal 16px Montserrat;
+}
+
+.perfil img {
+    height: 85%;
+    width: 85%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.fechar-perfil {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    float: right;
+}
+.perfil {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: none;
+    margin-right: 30px;
+}
+
+.modal-perfil {
+    position: absolute;
+    top: 75px; 
+    right: 25px; 
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px 0px 15px 15px; 
+    display: none;
+}
+
+.logout-btn {
+    font: normal 18px Montserrat;
+    display: block;
+    background: #ff0000;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 110px; 
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px; 
+}

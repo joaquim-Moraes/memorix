@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/flashcard.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Gerenciar Flashcards</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="titulo"><h1>Gerencie seus Flashcards</h1></div>
+        <div class="botoes-cabecalho">
+            <button class="voltar" onclick="window.location.href='home.html'">← Voltar</button>
+            <button class="perfil"><img src="img/pessoa.png" alt="Ícone de perfil"></button>
+        </div>
+    </header>
+
+    <!-- Modal de perfil -->
+    <div class="modal-perfil" id="modal-perfil">
+        <button class="fechar-perfil" onclick="fecharPerfil()">×</button>
+        <div class="modal-botoes">
+            <button class="logout-btn" onclick="logout()">Logout</button>
+            <button id="admin-button" class="admin-btn" style="display: none;" onclick="window.location.href='usuarios.html'">
+                Gerenciar Usuários
+         </button>
+        </div>
+    </div>
+
+    <section class="container">
+        <form id="form-flashcard">
+            <input type="text" id="titulo" placeholder="Título do flashcard" required>
+            <textarea id="pergunta" placeholder="Digite a pergunta" required></textarea>
+            <textarea id="resposta" placeholder="Digite a resposta" required></textarea>
+            <div class="btn-container">
+                <button class="salvar-btn" type="submit">Salvar Flashcard</button>
+            </div>
+        </form>
+    </section>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Pesquisar flashcards...">
+        <button id="search-button">
+            <img src="img/lupa.png" alt="Ícone de pesquisa">
+        </button>
+    </div>
+    <section class="lista-flashcards">
+        <h2>Seus Flashcards</h2>
+        <p id="mensagem-erro" style="display: none; text-align: center; font-size: 18px; color: red;">
+            Nenhum flashcard encontrado.
+        </p>
+        <div id="flashcards-list"></div>
+    </section>
+
+    <script src="JS/flashcard.js"></script>
+</body>
+</html>
